@@ -1,5 +1,5 @@
-var secondX = random(20);
-var secondY = random(40);
+var secondX = 20;
+var secondY = 40;
 function setup() {
     createCanvas(800, 800);
     angleMode(DEGREES);
