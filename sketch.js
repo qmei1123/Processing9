@@ -1,28 +1,19 @@
-var secondX = 20;
-var secondY = 40;
+var num = [20];
 function setup() {
     createCanvas(800, 800);
-    angleMode(DEGREES);
-
+    background(50, 50, 200);
 }
 
 function draw() { 
     background(0);
-    //line following mouse
-    line(mouseX, mouseY, mouseX*secondX, mouseY*secondY);
-    //custome shape
-    beginShape();
     noFill();
-    strokeWeight(5);
+    strokeWeight = 10;
     stroke(255);
-
-    let vertices = map(mouseY, 0, width, 5, 100);
-
-    for(let a = 0; a < 360; a += vertices) {
-        let x = 50 * sin(a) + 180;
-        let y = 50 * cos(a) + 180;
-        vertex (x, y);
+    for (var i = 0; i < 4; i++) {
+    ellipse(i*150 + 150, 100, num[0], num[0]);
+        for (var x = 0; x < 100; x += 4) {
+            ellipse(i*150 + 150, 100, num[0]*x/2, num[0]*x/2);
+        }
     }
-    endShape(CLOSE);
-    
+
 }
