@@ -15,7 +15,7 @@ function draw() {
         for (var x = 0; x < 100; x += 4) {
             ellipse(i*150 + 150, yPosition, num[0]*x/2, num[0]*x/2);
             for (var y = 0; y < 4; y++) {
-                ellipse(i*150 + 150, yPosition+(150*y), num[0]*x/2, num[0]*x/2);
+                ellipse(i*150 + 150, yPosition+150*y, num[0]*x/2, num[0]*x/2);
  
             }
         }
