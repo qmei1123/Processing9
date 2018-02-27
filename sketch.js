@@ -1,7 +1,8 @@
+var canvas;
 var num = [20];
 var yPosition = 150;
 function setup() {
-    createCanvas(800, 800);
+    createCanvas(window.innerWidth, window.innerHeight);
     background(50, 50, 200);
 }
 
